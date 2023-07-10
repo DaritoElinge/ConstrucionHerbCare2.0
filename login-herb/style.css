@@ -1,0 +1,112 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .navbar li {
+    display: inline-block;
+  }
+  
+  .navbar li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #login {
+    float: right;
+  }
+  
+  #loginFormContainer {
+    text-align: center;
+    display: flex; /* Mostrar los elementos en una línea */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    height: 100vh; /* Establecer la altura total de la ventana */
+  }
+  
+  #loginForm {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+  
+  #loginForm h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  #loginForm input[type="email"],
+  #loginForm input[type="password"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #loginForm button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  #loginForm p {
+    margin: 0;
+  }
+
+  #login {
+    float: right;
+  }
+  
+  #loginFormContainer {
+    text-align: center;
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    transition: max-height 0.5s ease; /* Añade una transición de desplazamiento suave */
+    max-height: 0; /* Oculta el formulario por defecto */
+  }
+  
+  .login-icon {
+    text-align: center;
+  }
+  
+  .login-icon img {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%; /* Hacerlo circular */
+  }
+  
+  #loginForm {
+    display: inline-block;
+    text-align: left;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    transition: transform 0.5s ease; /* Añade una transición de transformación suave */
+    transform: translateY(-100%); /* Desplaza el formulario hacia arriba por defecto */
+    transform: translateX(80%);
+  }
+  
+  #loginFormContainer.visible {
+    max-height: 400px; /* Altura máxima para mostrar el formulario */
+  }
+  
+  #loginForm.visible {
+    transform: translateY(100%); /* Desplaza el formulario hacia abajo al ser visible */
+    transform: translateX(530px);
+  }

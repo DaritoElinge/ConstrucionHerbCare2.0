@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Sobre Nosotros</a></li>
+      <li><a href="#">Contáctanos</a></li>
+      <li id="login"><a href="#" onclick="showLoginForm()">Iniciar sesión</a></li>
+    </ul>
+  </nav>
+
+  <div id="loginFormContainer" class="hidden">
+    <form id="loginForm">
+      <div class="login-icon">
+        <img src="img/login-icono2.png" alt="Logo de la planta">
+      </div>
+      <h2>Iniciar sesión</h2>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Contraseña" required>
+      <button type="submit">Iniciar sesión</button>
+      <p>No tienes una cuenta? <a href="#">Regístrate</a></p>
+    </form>
+  </div>
+</body>
+</html>
